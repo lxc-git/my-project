@@ -1,0 +1,21 @@
+#main{height:540px;border-bottom:1px solid #ccc}
+.mainL{height:540px;width:126px;float:left;height:540px}
+.mainL img{margin:30px 0 44px 0}
+.mainL ul li{height:24px;color:#999;}
+.mainL ul li a{color:#999;}
+.mainL ul li a:hover{color:#333;}
+.mainL .active a{color:#333}
+.mainR{width:750px;float:left;height:540px;}
+.mainR .p2 a{float:left;width:120px;height:18px;text-align:center;color:#333}
+.mainR .p2 a:hover{background:#999;color:#fff}
+.mainR .p1{border-bottom:1px solid #555;padding-bottom:3px;margin:35px 0 15px 0}
+.mainR .p2 .a1{background:#999;color:#fff}
+ .mainR dl{width:161px;height:266px;margin-top:80px}
+   .mainR dl p{height:18px}
+    .mainR dl:hover p a{background:url(../images/shoucangclose.jpg)}
+  .mainR dl p a{width:11px;height:11px;padding:1px;display:block;margin-left:155px;}
+  .mainR dl p a:hover{border:1px dashed #ccc;}
+.mainR dl a{color:#7a7a7a}
+.mainR dd{color:#a00}
+.mainR dd span{color:#ccc;margin-right:12px;text-decoration:line-through}
+

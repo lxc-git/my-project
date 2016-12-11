@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="cookies.js"></script>
+		<script src="jquery.min.js"></script>
+		<script src="shopjoincar.js"></script>
+		<link rel="stylesheet" href="main.css" />
+		<style>
+			.shoplist{
+				width: 900px;
+			}
+			.shop-item{
+				width: 100%;
+				
+				/*border: 1px solid #d1d1d1;*/
+				margin: 20px auto;
+				text-align: center;
+			}
+			.fl{
+				float: left;
+			}
+			.shop-item .fl{
+				padding: 10px;
+				width: 129px;
+				display: block;
+				font-style: normal;
+				height: 150px;
+				border: 1px solid #d1d1d1;
+				margin-left: -1px;
+			}
+			.shop-item .fl:after{
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+				height: 100%;
+			}
+			.shop-item .count > span{
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				border: 1px solid #d1d1d1;
+				line-height: 30px;
+				cursor: pointer;
+				margin-left: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="shoplist">
+			
+		</div>
+		<script>
+			$(function(){
+				var cars = getCookie("cars");
+				//如果 cookie 有商品信息
+				if(cars){
+					//将商品信息转换为对象
+					cars = JSON.parse(cars);
+				}else{
+					//默认空数据
+					cars = [];
+				}
+				var html = "";
+				//循环 cookie 中的商品信息
+				//动态生成 html
+				cars.forEach(function(shopinfo,i){
+					html += '<div class="shop-item clearfix">'+
+						'<img class="fl" src="img/'+ shopinfo.src +'" alt="" />'+
+						'<p class="fl">'+ shopinfo.name +'</p>'+
+						'<span class="fl">'+ shopinfo.price +'元</span>'+
+						'<p class="fl count" '+
+							'data-id="'+ shopinfo.id +'" '+
+							'data-price="'+ shopinfo.price +'" data-count="'+ shopinfo.count +'"'+
+							'data-name="'+ shopinfo.name +'" data-src="'+ shopinfo.src +'"'+
+							'>'+
+							'<span class="updateCount" data-number="1">+</span>'+
+							'<span class="shop-count">'+ shopinfo.count +'</span>'+
+							'<span class="updateCount" data-number="-1">-</span>'+
+						'</p>'+
+						'<em class="fl sumPrice">'+ (shopinfo.count * shopinfo.price) +'元</em>'+
+						'<i class="fl delBtn">删除</i>'+
+					'</div>';
+				});
+				$(".shoplist").html(html);
+				
+				$(".shoplist").on("click",".delBtn",function(e){
+					if(confirm("是否确认删除 ？ ")){
+						var $shopItem = $(this).parents(".shop-item");
+						//取出商品信息
+						var $p = $(this).siblings(".count");
+						//删除该商品
+						removeShopCar($p.data());
+						$shopItem.remove();
+					}
+				});
+				$(".shoplist").on("click",".updateCount",function(e){
+					var $shopItem = $(this).parents(".shop-item");
+					var number = $(this).data("number");
+					var $p = $(this).parent();
+					var price = $p.data("price");
+					var count = $p.data("count");
+					//修改后的数量
+					count += number;
+					if(count < 1){
+						//如果点击确定
+						if(confirm("商品数量不能小于1，确认从购物移除吗？")){
+							//将该商品从购物车中删除
+							$shopItem.remove();
+							//不传参数时，会将所有的 data 数据以对象形式返回
+							//删除该商品
+							removeShopCar($p.data());
+						}
+						return false;
+					}
+					
+					//把修改后的数量存入 元素中
+					$p.data("count",count);
+					
+					var sum = price * count;
+					
+					//获取小计的元素节点
+					var $sumPrice = $shopItem.find(".sumPrice");
+					
+					$sumPrice.html(sum + "元");
+					//找到数量的元素节点，修改数量
+					$(this).siblings(".shop-count").html(count);
+					//将修改的商品数量传入过去
+					_shopinfo($p,number);
+				});
+			});
+		</script>
+	</body>
+</html>

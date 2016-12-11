@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			input{
+				padding: 5px;
+				width: 200px;
+				height: 30px;
+				border: 1px solid #d1d1d1;
+			}
+		</style>
+		<script src="cookies.js"></script>
+		<script src="jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="register">
+			<input class="username" type="text" value="" placeholder="请输入用户名" />
+			<br/>
+			<input class="userpassword" type="password" value="" placeholder="请输入密码" />
+			<br/>
+			<button>注册</button>
+			<script>
+				$(function(){
+					//给注册按钮绑定一个 click 事件
+					$("#register").on("click","button",function(){
+						var username = $(".username","#register").val();
+						var userpassword = $(".userpassword","#register").val();
+						
+						setCookie("name",username); //把用户名存入 cookie
+						setCookie("password",userpassword); //把密码出入 cookie
+					});
+				})
+			</script>
+		</div>
+		<br />
+		<div id="login">
+			<input class="username" type="text" value="" placeholder="请输入用户名" />
+			<br/>
+			<input class="userpassword" type="password" value="" placeholder="请输入密码" />
+			<br/>
+			<button>登录</button>
+			<script>
+				$(function(){
+					//给 登录按钮绑定事件
+					$("#login").on("click","button",function(){
+						var username = $(".username","#login").val();
+						var userpassword = $(".userpassword","#login").val();
+						
+						if(username == getCookie("name") && userpassword == getCookie("password")){
+							alert("登录成功");
+							//登录的用户名保存到 cookie
+							setCookie("loginNmae",username);
+							//刷新页面去 列表页
+							window.location.href = "./list.html";
+						}else{
+							alert("账号或者密码错误");
+						}
+					});
+				});
+				
+			</script>
+		</div>
+		
+		
+	</body>
+</html>

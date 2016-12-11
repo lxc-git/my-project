@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+.shoplist{
+				width: 900px;
+				
+			}
+			.shop-item{
+				width: 100%;
+				
+				/*border: 1px solid #d1d1d1;*/
+				margin: 20px auto;
+				text-align: center;
+				
+			}
+			.fl{
+				float: left;
+			}
+			.shop-item .fl{
+				padding: 10px;
+				width: 138px;
+				display: block;
+				font-style: normal;
+				height: 150px;
+				border: 1px solid #d1d1d1;
+				margin-left: -1px;
+				background:#fbfcf8
+				
+			}
+			.shop-item  em span{
+				color:#a00;
+				font-size:16px;
+				font-weight:bold
+			}
+			
+			
+			.shop-item .fl:after{
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+				height: 100%;
+			}
+			.shop-item .count > span{
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				border: 1px solid #d1d1d1;
+				line-height: 30px;
+				cursor: pointer;
+				margin-left: 5px;
+			}
+
+			.shop-item i:hover{color:#a00;} 
+			
+
+
+
+
+
+
+
+
+
+
+#line{height:95px;position:relative;}
+#line img{position:absolute}
+.line-2{height:38px;border:1px solid #8cbe7c;width:938px;padding-left:20px;margin-top:10px;
+line-height:38px;background:#f4fff3;color:#6c6c6c;position:absolute;top:38px}
+#main{min-height:300px;_height:300px;color:#7a7a7a;margin-bottom:40px}
+.main-1{width:930px;height:40px;background:#eee}
+.main-1 li{float:left;line-height:40px;}
+.main-1 .li2{margin:0 122px 0 149px}
+.main-1 .li4{margin:0 70px 0 90px}
+.main-1 .li5{margin:0 139px 0 76px;}
+.main-2{height:110px;padding:0 36px 0 36px;border-bottom:1px solid #eee;padding-top:20px}
+.main-2 li{float:left}
+.main-2 a{color:#7a7a7a}
+.main-2 a:hover{color:#006}
+.main-2 .li2{width:550px;margin:0px 30px 0 20px;padding-top:33px;margin-top:20px;}
+.main-2 .loadimg img{width:100px;height:100px;}
+.main-2 .li4{padding-top:34px;margin-left:20px;} 
+.main-2 .li3{padding-top:33px}
+.main-2 .li5{padding-top:25px;margin-left:50px}
+.main-3{width:100%;}
+.main-3L{width:76px;margin-right:618px;float:left;margin-top:50px;background:#eee;height:25px;line-height:25px;}
+
+.main-3R{width:200px;float:left;margin-top:22px;padding-left:60px}
+.main-3R button{background:url(../images/myshoppingmain.jpg);margin-left:47px;margin-top:23px;width:150px;height:40px}
+.main-3R span{color:#8e0c3a;font-size:16px;padding-left:20px}
+

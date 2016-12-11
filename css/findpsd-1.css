@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0}
+ul,li{list-style:none}
+a{text-decoration:none}
+.Con{width:958px; margin:0 auto}
+img{border:0}
+#sousuo{height:66px;z-index:3;border-bottom:1px solid #ccc;left:153px;position:fixed;top:190px;display:none;}
+.sousuoCon{height:66px;left:153px;background:#fff;}
+.sousuoCon h3{width:200px;height:50px;float:left;padding:20px 0 0 0}
+.sousuoCon form{width:600px;height:28px;border:2px solid #a00;float:left;margin-left:40px;margin-top:15px;}
+.sousuoCon #txt{border:0;float:left;height:28px;width:566px}
+.sousuoCon #btn{border:0;float:left;width:34px;height:20px;margin-top:4px;border-left:1px solid #999;background:url(../images/formbtn.jpg) no-repeat center}
+
+.sousuoCon p{width:75px;height:66px;float:right;font-size:12px;line-height:66px;padding-left:38px;background: url(../images/sousuo2.bmp) no-repeat 10px center}
+.sousuoCon p a{color:#333}
+
+#content{height:293px;border-bottom:1px solid #999}
+#content .p1{color:#ac4d6f;font-weight:bold;font-size:20px;margin-top:20px;}
+#content .p1 span{color:#666}
+#content .img1{text-align:center;margin:26px 0 15px 0;}
+.content_{height:293px;padding-left:156px}
+#content form p{height:40px}
+#content .p2{padding-left:144px}
+#content .p3{padding-left:164px;width:192px}
+#content .p2 input{border:0;width:202px;height:20px;border:1px solid #bbb}
+#content .p3 img{display:none;float:right}
+#content .p3 input{width:78px;height:20px;border:1px solid #bbb}
+#content button{width:123px;height:38px;background:#5c5c5c;color:#fff;font-size:18px;border:0;margin-left:224px}
+#content .yz{width:240px;height:30px;color:#333;margin:12px 0 0 220px;color:#ac4d6f}

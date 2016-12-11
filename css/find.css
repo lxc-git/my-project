@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+#main{height:325px;color:#666;border-bottom:1px solid #ccc}
+#main .con input{width:206px;height:21px;border:1px solid　#bbb}
+.line{height:34px;border-bottom:1px solid #555;font-size:14px;line-height:34px; }
+.mainL{height:224px;width:383px;float:left;margin-top:15px;border-right:1px solid #ccc; padding-left:93px;}
+
+.mainL p{height:24px;}
+.mainL .rand{width:220px;-background:red}
+.mainL .rand input{width:102px}
+.mainL p span{float:right;display:block;height:25px;width:50px}
+.mainL .p1{margin:13px 0 12px 0;color:#8e0c3a}
+.mainL .pcon{margin-bottom:15px;}
+.mainL button{width:93px;height:28px;background:#5a5a5a;border:0;color:#fff;margin-left:57px;}
+.mainR{height:209px;width:388px;float:left;padding-left:91px;padding-top:15px;}
+.mainR p{height:24px;}
+.mainR .p1{margin:13px 0 12px 0;color:#8e0c3a;}
+.mainR .pcon{margin-bottom:15px;}
+.mainR button{width:204px;height:30px;background:#8e0c3a;border:0;color:#fff;margin-left:57px;}
+.mainR p span{float:right;display:block;height:25px;width:70px}
+.mainR .psd{width:185px;margin-left:58px}
+.mainR .psd input{float:left;margin-top:4px;}
+.mainR .btn{display:block}
+.mainR .yz{padding-left:45px;line-height:30px;margin-top:10px;color:#a00;}

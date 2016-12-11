@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="main.css" />
+		<script src="jquery.min.js"></script>
+	</head>
+	<body>
+		<script>
+			$(function(){
+				
+//				var src = "img/1.jpg";
+//				$("body").append("<h1><img src='"+src+"'></h1>");
+//				var str = "aaaa src sd"; // => aaaa****sd
+//				var str2 = str.replace(/src/g,function(a,b){
+//					console.log(a,b);
+//					// a 是正则匹配条件
+//					// b 是正则匹配结果
+//					return "*";
+//				});
+//				console.log(str2);
+				
+				var obj = {
+					"src" : "img/1.jpg"
+				}
+				
+				var html = "<h1><img src='{{src}}'/></h1>";
+//				var html = "<h1><img src='" + obj.src + "'/></h1>";
+				html = html.replace(/{{([\w]+)}}/ig,function(a,b){
+					// a 是正则匹配条件
+//					// b 是正则匹配结果
+					
+					//如果 b 在 obj 中存在
+					if(b in obj){
+						return obj[b];
+					}
+					return "";
+				});
+				console.log(html);
+				$("body").append(html);
+			});
+		</script>
+	</body>
+</html>

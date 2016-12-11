@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+#content{height:293px;color:#6c6c6c;border-bottom:1px solid #999}
+#content .p1{color:#ac4d6f;font-weight:bold;font-size:20px;margin-top:20px;}
+#content .p1 span{color:#666}
+#content .img1{text-align:center;margin:26px 0 15px 0;}
+.content_{height:293px;padding-left:156px}
+#content form p{height:40px}
+#content .p2{padding-left:144px;margin-top:40px}
+#content button{width:123px;height:38px;background:#5c5c5c;color:#fff;font-size:18px;
+border:0;margin-left:224px;margin-top:20px}
+

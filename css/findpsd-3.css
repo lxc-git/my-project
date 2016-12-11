@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+#content{height:293px;color:#6c6c6c;border-bottom:1px solid #999}
+
+#content .p1{color:#ac4d6f;font-weight:bold;font-size:20px;margin:20px 0 20px 0;}
+#content .p1 span{color:#666}
+#content .img1{text-align:center;margin-bottom:15px;}
+.content_{height:267px;padding-left:156px;position:relative;}
+.content_ .pos{position:absolute;left:644px;top:89px}
+#content form p{width:238px;height:40px;margin-left:213px}
+#content form .p2{height:26px;margin-top:32px}
+#content form .p2 span{color:#ac4d6f}
+#content button{width:123px;height:38px;background:#5c5c5c;color:#fff;font-size:18px;border:0;margin-left:267px}
+

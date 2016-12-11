@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+input{outline:none}
+#formbox{width:888px;height:512px;font-size:12px;color:#6c6c6c;background:pink; background:url(../images/formboxbg.jpg) no-repeat;padding:28px 0 0 70px}
+#formbox .p1{color:#8e0c3a;font-size:16px;margin-left:145px;}
+#formbox .p1 span{font-weight:600}
+#formbox form{height:151px;width:274px;margin:41px 0 0 38px; }
+#formbox  form p{width:276px;margin-bottom:18px}
+#formbox .pcon input{width:202px;height:20px} 
+#formbox  .btn{background:#8e0c3a;color:#fff;width:150px;height:30px;display:block;text-align:center;color:#fff;line-height:30px;margin-left:60px;width:202px;height:30px;border:0}
+#formbox .p4{margin-left:61px;height:20px;}
+#formbox .p4 input{float:left}
+#formbox .p6{padding-left:199px}
+#formbox .p6 a{color:#8e0c3a}
+#formbox .yz{color:#a00;padding-left:40px}

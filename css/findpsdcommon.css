@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0}
+ul,li{list-style:none}
+a{text-decoration:none}
+body{font:12px 微软雅黑}
+.Con{width:958px; margin:0 auto}
+#top{height:36px;background:#f4f4f4;}
+.topCon{width:958px;height:36px;}
+.topCon .pL{width:256px;height:36px;float:left;line-height:36px}
+.topCon .pL a{color:#7a7a7a;font-size:12px;padding-right:16px}
+.topCon .pL .ac{border-left:1px solid #ccc;padding-left:16px}
+.topCon .pL .ar{padding-right:0}
+.topCon .pC{width:140px;height:36px;float:left;color:#7a7a7a;margin-left:343px;line-height:36px;font-size:12px;}
+.topCon .pR{width:210px;height:36px;float:right;color:#7a7a7a;font-size:12px;line-height:36px}
+.topCon .pR li{float:left;/*width:80px;margin-right:10px*/}
+.topCon .pR .shop{width:62px;height:30px;margin-top:3px;margin-left:30px;line-height:33px;background:url(../images/sytop.jpg) no-repeat 15px center;position:relative;
+	padding-left:45px;}
+	.topCon .pR .shop p{width:107px;height:2px;background:#fff;display:none;top:26px;left:0px;position:absolute;z-index:1}
+
+.topCon .shop:hover .phide{display:block}
+.topCon .pR .shop:hover{border-left:1px solid #ccc;border-top:1px solid #ccc;border-right:1px solid #ccc;}
+.topCon .pR .shop ul{width:290px;min-height:80px;_height:80px;background:#fff;display:none;border:1px solid #ccc;position:absolute;top:26px;left:-184px}
+.topCon .pR .span1{position:relative;width:65px;margin-left:5px}
+.topCon .pRhide{height:55px;width:140px;border:1px solid #ccc;display:none;
+position:absolute;right:25px;text-align:center;padding-top:5px;}
+.topCon .pRhide img{display:block;float:left;margin-left:24px}
+.topCon .pRhide .pRhidetop{height:23px;}
+.topCon .pRhide span{margin-left:5px}
+.topCon .pRhide a{color:#7a7a7a}
+
+
+#logo{height:99px;}
+#logo .logoL{width:85px;height:84px;float:left;padding:15px 0 0 15PX}
+#logo  .logop2{width:90px;height:42px;float:left;padding-top:42px;color:#b95f81;font-size:14px;}
+#logo  .logop2 span{color:#e1e1e1;font-size:12px;}
+#logo h1{width:280px;height:70px;float:left;margin-left:163px;padding-top:29px;}
+#logo form{ width:156px;height:26px;float:left;border:1px solid #afafaf;margin:40px 0 0 165px;}
+#logo form .txt{width:132px;height:24px;float:left;border:0;border-right:1px solid #CCC;margin-top:1px;color:#999;font-size:12px;line-height:24px}
+#logo form .btn{width:23px;height:25px;float:left;border:0;background:url(../images/formbtn.jpg) no-repeat center}
+#nav{height:34px;border-bottom:1px solid #333;position:relative;}
+#nav .ul-1{width:958px;height:34px;}
+#nav li{ float:left;}
+#nav li .acon{float:left;width:106px;height:34px;color:#222;line-height:34px;text-align:center;font-size:12px}
+#nav .libig a{width:110px;color:#fff} 
+
+#nav .navshow{position:absolute;width:943px;padding:15px 0 0 15px;height:350px;border:1px solid #ccc;border-top:0;background:#fff;z-index:1;display:none;top:35px;left:0}
+#nav .navshow dl{float:left;width:148px;height:435px;position:relative}
+#nav .con{height:435px;width:190px;display:block}
+.navshow img{margin-top:100px;position:absolute;top:70px}
+#nav .con2{position:absolute;top:270px;z-index:2}
+#nav .navshow dl a{font-size:12px; color:#666}
+#nav .navshow dt a{color:#800;font-weight:600}
+#nav .navshow dt,dd{line-height:25px}
+#link{height:107px;padding-top:25px}
+.link1{height:86px;width:380px;float:left;border-right:1px solid #999}
+.link1 ul{float:left;width:93px;height:89px}
+.link1 li{height:20px} 
+.link1 li a{color:#7a7a7a;font-size:12px}
+.link1 .licon a{color:#666;font-size:12px}
+.link1 .licon{margin-bottom:7px}
+.link2{height:69px;width:240px;float:left;border-right:1px solid #999;color:#666;font-size:12px;text-align:center;padding-top:17px}
+.link2 span{display:block;margin-top:11px;font-size:16px}
+.link3{height:69px;width:145px;float:left;border-right:1px solid #999;padding-top:17px;color:#666;font-size:12px;text-align:center}
+.link3 p{margin-bottom:10px}
+
+.link4{height:86px;width:190px;float:left;text-align:center}
+.link4 p{width:91px;height:84px;float:left;color:#666;font-size:12px;}
+.link4 img{margin-top:10px}

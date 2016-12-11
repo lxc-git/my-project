@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+img{display:block}
+
+
+	.main{
+				width: 350px;
+				height: 350px;
+				border: 1px solid #d1d1d1;
+				position:relative;
+				cursor: pointer;
+				
+			}
+			.main > .wrap{
+				width: 100%;
+				height: 100%;
+			}
+			.content{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			.content > img{
+				width: 100%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			
+			.main .hover{
+				width: 100px;
+				height: 100px;
+				background: #ff0000;
+				position:absolute;
+				left: 0;
+				top: 0;
+				opacity: 0.3;
+				cursor: inherit;
+				display: none;
+			}
+			.main  .big-img{
+				width: 480px;
+				height: 480px;
+				border: 1px solid #d1d1d1;
+				position: absolute;
+				top: 50%;
+				left: 100%;
+				margin-top: -240px;
+				overflow: hidden;
+				display: none;
+				background:#fff;
+				
+			}
+			.main  .big-img > img{
+				width: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			
+			.main > .wrap:hover .hover,
+			/* 鼠标移动到 warp 上时，显示它的兄弟元素 */
+			.main > .wrap:hover + .big-img{
+				display: block;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#show{height:450px;border-bottom:1px solid #eee}
+.showL{width:571px;-height:450px;float:left;margin-top:10px;}
+/*.showL .imgbox{width:328px;height:350px;margin-top:30px;float:right;border:1px solid #ccc;margin-right:110px;text-align:center;-border:1px solid #ccc;-overflow:hidden}
+
+.showL p{display:none;width:328px;height:20px;color:#666;text-align:center;background:red}
+.showL button{display:none;}
+.shopinfo {width:300px;text-align:center;padding-left:27px;padding-top:60px;}
+.shopinfo img{width:270px;height:260px;}*/
+
+/*.showL img{width:280px;height:320px;border:1px solid #ccc;padding:30px;margin:20px;}*/
+.showR{width:387px;float:left;}
+
+.showR h2 a{color:#000;font-size:14px;}
+.showR h2 span{display:block;color:#6c6c6c;font-size:12px}
+.showR h2{margin:36px 0 16px 0}
+.showR h2 {width:100px;height:60px;}
+.showR p{margin:15px 0;}
+.showR .price{color:#a00;font-size:22px}
+.showR .money{color:#999;font-size:22px;text-decoration:line-through}
+.showR .pline{border-top:1px solid #ccc;border-bottom:1px solid #ccc;line-height:30px;color:#555}
+.showR .p1 span{text-decoration:line-through;}
+.showR .timer{margin:30px 0 35px 0}
+.showR button{width:121px;height:33px;background:#ab2f5e;border:0;color:#fff}
+.showR .btn2{padding-left:30px;background:#353535 url(../images/xqshowbtn.jpg) no-repeat 20px 11px;margin-left:10px;}
+#recom{height:358px;}
+#recom .img1{margin:38px 0 10px 0}
+#recom dl{float:left;width:161px;height:266px;margin-right:31px}
+#recom dl a{color:#7a7a7a}
+#recom .dl5{margin-right:0}
+#roduct {height:auto}
+#product ul{height:40px;border-bottom:1px solid #777}
+#product li{width:140px;height:40px;float:left;margin-right:5px;background:#e6e6e6;color:#000;line-height:40px;text-align:center;cursor:pointer;}
+#product .img1{clear:both;margin:30px 0 15px 0}
+#product .active{background:#505050;color:#fff}
+#product table{border:1px solid #eee;width:958px;}
+#product table{border:1px solid #ccc;width:958px}
+#product td{padding-left:10px;height:47px;border:1px solid #eee;}
+#product .proSize{height:443px;border-bottom:1px dashed #ccc;display:none}
+#product p{height:493px;float:left}
+#product .p1{width:300px;}
+#product .p1 img{margin-top:30px;}
+#product .p2{width:650px;}
+#product .p2 img{margin-top:50px} 
+#list{height:40px;border-top:1px solid #999;border-bottom:1px solid #999;margin-top:50px;line-height:40px}
+#list a{color:#7a7a7a}
+

@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+#nav-2{height:22px;background:#eee;padding-left:38px;width:920px}
+#nav-2 li{float:left;}
+#nav-2 li a{font-size:12px;color:#7a7a7a;float:left;width:89px;height:22px;line-height:22px;text-align:center}
+#nav-2 a:hover{background:#666;color:#fff}
+#bottom{height:155px;text-align:center}
+#bottom ul{padding:20px 0 0 145px}
+#bottom li{float:left;margin:2px 2px 0 2px}
+#bottom li a{float:left;}
+#bottom a{float:left}
+#bottom .a1{width:22px;height:22px;background:url(../images/bottombg.jpg) no-repeat 0 -110px}
+#bottom .a2{width:100px;height:22px;background:url(../images/bottombg.jpg) no-repeat 0 -155px}
+#bottom .a3{width:66px;height:22px;background:url(../images/bottombg.jpg) no-repeat 0 -133px}
+#bottom .a4{width:73px;height:22px;background:url(../images/bottombg.jpg) no-repeat -182px -180px}
+#bottom .a5{width:73px;height:23px;background:url(../images/bottombg.jpg) no-repeat -66px -110px}
+#bottom .a6{width:84px;height:22px;background:url(../images/bottombg.jpg) no-repeat -5px -179px}
+#bottom .a7{width:85px;height:22px;background:url(../images/bottombg.jpg) no-repeat -5px -179px}
+#bottom .p1{clear:both;line-height:20px;padding-top:18px;color:#777}
+#bottom .p2{padding-left:412px;margin-top:17px}
+#bottom .p2 a{margin-right:15px}
+#bottom .a1:hover{background-position:0 0px}
+#bottom .a2:hover{background-position:0 -45px}
+#bottom .a4:hover{background-position:-182px -70px}
+#bottom .a5:hover{background-position:-66px 0}
